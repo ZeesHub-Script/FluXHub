@@ -657,7 +657,7 @@ end
 local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeesHub-Script/UIMenu/refs/heads/main/UIFluent.lua"))()
 local Window = Fluent:CreateWindow({
     Title="ZeesVN FluX [Premium]",
-    SubTitle="  by @zeesvn", 
+    SubTitle="  by ZeesVN Hub", 
     TabWidth=160, 
     Theme="TuanAnhIOS",
     Acrylic=false,
@@ -757,7 +757,7 @@ local Tabs = {
   Quests = Window:AddTab({Title = "Tab Items Farm", Icon = "rbxassetid://125282832400042"}),
   SeaEvent = Window:AddTab({Title = "Tab Sea Events", Icon = "rbxassetid://125282832400042"}),
   Mirage = Window:AddTab({Title = "Tab Mirage + RaceV4", Icon = "rbxassetid://125282832400042"}),
-  Drago = Window:AddTab({Title = "Tab Drago Dojo", Icon = "rbxassetid://125282832400042"}),
+  Drago = Window:AddTab({Title = "Tab Dragon Dojo", Icon = "rbxassetid://125282832400042"}),
   Prehistoric = Window:AddTab({Title = "Tab Prehistoric", Icon = "rbxassetid://125282832400042"}),
   Raids = Window:AddTab({Title = "Tab Raid", Icon = "rbxassetid://125282832400042"}),
   Combat = Window:AddTab({Title = "Tab Combat PVP", Icon = "rbxassetid://125282832400042"}),
@@ -768,14 +768,14 @@ local Tabs = {
 }
 
 Tabs.Main:AddButton({
-        Title="Copy Discord Link",
-        Description="discord.gg/WYMXvrnpz2",
+        Title="Copy Discord Server Link",
+        Description="gg/WYMXvrnpz2",
         Callback=function()
             setclipboard(tostring("https://discord.gg/WYMXvrnpz2")) 
         end
 })
 Tabs.Main:AddSection("ZeesVN FluX")
-local FarmLevel = Tabs.Main:AddToggle("FarmLevel", {Title = "Auto Farm Level", Description = "Cày Level 2650-2800 New", Default = false})
+local FarmLevel = Tabs.Main:AddToggle("FarmLevel", {Title = "Auto Farm Level", Description = "Farm Level NEW", Default = false})
 FarmLevel:OnChanged(function(Value)
   _G.Level = Value
 end)
@@ -2532,7 +2532,7 @@ local Byp = Tabs.Settings:AddToggle("Byp", {Title = "Turn on Bypass Teleport", D
 Byp:OnChanged(function(Value)
   _G.Bypass = Value
 end)
-local SafeModes = Tabs.Settings:AddToggle("SafeModes", {Title = "Panic Mode", Description = "turn on for safe ur health if low", Default = false})
+local SafeModes = Tabs.Settings:AddToggle("SafeModes", {Title = "Panic Mode", Description = "Turn on for safe ur health if low", Default = false})
 SafeModes:OnChanged(function(Value)
   _G.Safemode = Value
 end)
@@ -3957,7 +3957,7 @@ spawn(function()
     end)
   end
 end)
-local Q = Tabs.Mirage:AddToggle("Q", {Title = "Auto Find Mirage Island", Description = "turn on for finding & tween mirage island", Default = false})
+local Q = Tabs.Mirage:AddToggle("Q", {Title = "Auto Find Mirage Island", Description = "Turn on for finding & tween mirage island", Default = false})
 Q:OnChanged(function(Value)
   _G.FindMirage = Value
 end)
@@ -4376,7 +4376,7 @@ spawn(function()
     end
   end
 end)
-local Q = Tabs.Mirage:AddToggle("Q", {Title = "Auto Train V4", Description = "turn on for farm tier + auto upgrade your tier level", Default = false})
+local Q = Tabs.Mirage:AddToggle("Q", {Title = "Auto Train V4", Description = "Turn on for farm tier + auto upgrade your tier level", Default = false})
 Q:OnChanged(function(Value)
   _G.AcientOne = Value
 end)
@@ -4528,7 +4528,7 @@ spawn(function()
     end)
   end
 end)
-local Q = Tabs.Mirage:AddToggle("Q", {Title = "Auto Kill Player After Trial", Description = "turn on for kill player after the race trials", Default = false})
+local Q = Tabs.Mirage:AddToggle("Q", {Title = "Auto Kill Player After Trial", Description = "Turn on for kill player after the race trials", Default = false})
 Q:OnChanged(function(Value)
   _G.Defeating = Value
 end)
@@ -4549,7 +4549,7 @@ spawn(function()
 end)
 
 Tabs.Drago:AddSection("Dojo Quest & Drago Race")
-local DojoQ = Tabs.Drago:AddToggle("DojoQ", {Title = "Auto Dojo Trainer", Description = "turn on for do dojo belt quest white to black", Default = false})
+local DojoQ = Tabs.Drago:AddToggle("DojoQ", {Title = "Auto Dojo Trainer", Description = "Turn on for do dojo belt quest white to black", Default = false})
 DojoQ:OnChanged(function(Value)
   _G.Dojoo = Value
 end)
@@ -4635,7 +4635,7 @@ spawn(function()
     end
   end
 end)
-local BlazeEM = Tabs.Drago:AddToggle("BlazeEM", {Title = "Auto Dragon Hunter", Description = "turn on for farm blaze ember + auto collect blaze ember", Default = false})
+local BlazeEM = Tabs.Drago:AddToggle("BlazeEM", {Title = "Auto Dragon Hunter", Description = "Turn on for farm blaze ember + auto collect blaze ember", Default = false})
 BlazeEM:OnChanged(function(Value)
   _G.FarmBlazeEM = Value
 end)
@@ -4725,7 +4725,7 @@ spawn(function()
     end)
   end
 end)
-Toggle = Tabs.Drago:AddToggle("Toggle", {Title = "Auto Drago (V1)", Description = "turn on for auto quest1 auto prehistoric event + collect dragon eggs", Default = false})
+Toggle = Tabs.Drago:AddToggle("Toggle", {Title = "Auto Drago (V1)", Description = "Turn on for auto quest1 auto prehistoric event + collect dragon eggs", Default = false})
 Toggle:OnChanged(function(Value)
   _G.DragoV1 = Value
 end)
@@ -4747,7 +4747,7 @@ spawn(function()
     end)
   end
 end)
-local fireflower = Tabs.Drago:AddToggle("fireflower", {Title = "Auto Drago (V2)", Description = "turn on for auto kill Forest Pirate & Collect fireflower", Default = false})
+local fireflower = Tabs.Drago:AddToggle("fireflower", {Title = "Auto Drago (V2)", Description = "Turn on for auto kill Forest Pirate & Collect fireflower", Default = false})
 fireflower:OnChanged(function(Value)
   _G.AutoFireFlowers = Value
 end)
@@ -4776,7 +4776,7 @@ spawn(function()
     end
   end
 end)
-Toggle = Tabs.Drago:AddToggle("Toggle", {Title = "Auto Drago (V3)", Description = "turn on for sea event kill terror shark", Default = false})
+Toggle = Tabs.Drago:AddToggle("Toggle", {Title = "Auto Drago (V3)", Description = "Turn on for sea event kill terror shark", Default = false})
 Toggle:OnChanged(function(Value)
   _G.DragoV3 = Value
 end)
@@ -4796,7 +4796,7 @@ spawn(function()
     end)
   end
 end)
-Toggle = Tabs.Drago:AddToggle("Toggle", {Title = "Auto Relic Drago Trial [Beta]", Description = "turn on for auto trial v4 you have to COLLECT RELIC by your self", Default = false})
+Toggle = Tabs.Drago:AddToggle("Toggle", {Title = "Auto Relic Drago Trial [Beta]", Description = "Turn on for auto trial v4 you have to COLLECT RELIC by your self", Default = false})
 Toggle:OnChanged(function(Value)
   _G.Relic123 = Value
 end)
@@ -4823,7 +4823,7 @@ spawn(function()
     end
   end
 end)
-Toggle = Tabs.Drago:AddToggle("Toggle", {Title = "Auto Train Drago v4", Description = "turn on for training Drago race v4 + auto upgrade tier", Default = false})
+Toggle = Tabs.Drago:AddToggle("Toggle", {Title = "Auto Train Drago v4", Description = "Turn on for training Drago race v4 + auto upgrade tier", Default = false})
 Toggle:OnChanged(function(Value)
   _G.TrainDrago = Value
 end)
@@ -4897,7 +4897,7 @@ spawn(function()
 end)
 
 Tabs.Prehistoric:AddSection("Volcanic Magnet")
-Toggle = Tabs.Prehistoric:AddToggle("Toggle", {Title = "Auto Craft Volcanic Magnet", Description = "turn on for auto farm material and craft volcanic magnet & stop when you have 1 volcanic magnet", Default = false})
+Toggle = Tabs.Prehistoric:AddToggle("Toggle", {Title = "Auto Craft Volcanic Magnet", Description = "Turn on for auto farm material and craft volcanic magnet & stop when you have 1 volcanic magnet", Default = false})
 Toggle:OnChanged(function(Value)
   _G.CraftVM = Value
 end)
@@ -4936,7 +4936,7 @@ spawn(function()
     end
   end
 end)
-Vocan = Tabs.Prehistoric:AddToggle("Vocan", {Title = "Auto Find Prehistoric Island", Description = "turn on for finding & tween & start prehistoric island", Default = false})
+Vocan = Tabs.Prehistoric:AddToggle("Vocan", {Title = "Auto Find Prehistoric Island", Description = "Turn on for finding & tween & start prehistoric island", Default = false})
 Vocan:OnChanged(function(Value)
   _G.Prehis_Find = Value
 end)
@@ -4982,7 +4982,7 @@ spawn(function()
     end
   end
 end)
-local Vocan = Tabs.Prehistoric:AddToggle("Vocan", {Title = "Auto Patch Prehistoric Event", Description = "turn on for auto patch volcano + kill aura lava golems + auto remove lava", Default = false})
+local Vocan = Tabs.Prehistoric:AddToggle("Vocan", {Title = "Auto Patch Prehistoric Event", Description = "Turn on for auto patch volcano + kill aura lava golems + auto remove lava", Default = false})
 Vocan:OnChanged(function(Value)
   _G.Prehis_Skills = Value
 end)
@@ -5127,7 +5127,7 @@ spawn(function()
     end
   end)
 end)
-local Q = Tabs.SeaEvent:AddToggle("Q", {Title = "Auto Teleport Frozen Dimension", Description = "turn on for teleport to frozen dimension and start the leviathan gate", Default = false})
+local Q = Tabs.SeaEvent:AddToggle("Q", {Title = "Auto Teleport Frozen Dimension", Description = "Turn on for teleport to frozen dimension and start the leviathan gate", Default = false})
 Q:OnChanged(function(Value)
   _G.FrozenTP = Value
 end)
@@ -5287,7 +5287,7 @@ spawn(function()
     end
   end
 end)
-local Q = Tabs.SeaEvent:AddToggle("Q", {Title = "Auto Find Kitsune Island", Description = "turn on for finding & tween kitsune island", Default = false})
+local Q = Tabs.SeaEvent:AddToggle("Q", {Title = "Auto Find Kitsune Island", Description = "Turn on for finding & tween kitsune island", Default = false})
 Q:OnChanged(function(Value)
   _G.AutofindKitIs = Value
 end)
@@ -5731,7 +5731,7 @@ task.spawn(function()
 end)
 
 Tabs.Combat:AddSection("LocalPlayer Settings / Misc")
-Q = Tabs.Combat:AddToggle("Q", {Title = "Instance Mink V3 [ INF ]", Description = "turn on for make mink v3 infinity", Default = false})
+Q = Tabs.Combat:AddToggle("Q", {Title = "Instance Mink V3 [ INF ]", Description = "Turn on for make mink v3 infinity", Default = false})
 Q:OnChanged(function(Value)
   InfAblities = Value
 end)
@@ -5750,17 +5750,17 @@ spawn(function()
     end)
   end
 end)
-Q = Tabs.Combat:AddToggle("Q", {Title = "Instance Energy [ INF ]", Description = "turn on for make energy infinity", Default = false})
+Q = Tabs.Combat:AddToggle("Q", {Title = "Instance Energy [ INF ]", Description = "Turn on for make energy infinity", Default = false})
 Q:OnChanged(function(Value)
   infEnergy = Value
   if Value then getInfinity_Ability("Energy", infEnergy) end
 end)
-Q = Tabs.Combat:AddToggle("Q", {Title = "Instance Soru [ INF ]", Description = "turn on for make soru infinity", Default = false})
+Q = Tabs.Combat:AddToggle("Q", {Title = "Instance Soru [ INF ]", Description = "Turn on for make soru infinity", Default = false})
 Q:OnChanged(function(Value)
   _G.InfSoru = Value
   if Value then getInfinity_Ability("Soru", _G.InfSoru) end
 end)
-Q = Tabs.Combat:AddToggle("Q", {Title = "Instance Observation Range [ INF ]", Description = "turn on for make observation range infinity", Default = false})
+Q = Tabs.Combat:AddToggle("Q", {Title = "Instance Observation Range [ INF ]", Description = "Turn on for make observation range infinity", Default = false})
 Q:OnChanged(function(Value)
   _G.InfiniteObRange = Value
   if Value then getInfinity_Ability("Observation", _G.InfiniteObRange) end
@@ -5768,11 +5768,11 @@ end)
 
 Tabs.Combat:AddSection("Settings Combat / Aimbot Settings")
 
-Q = Tabs.Combat:AddToggle("Q", {Title = "Ignore Same Teams", Description = "turn on for ignore not aimbot same team", Default = false})
+Q = Tabs.Combat:AddToggle("Q", {Title = "Ignore Same Teams", Description = "Turn on for ignore not aimbot same team", Default = false})
 Q:OnChanged(function(Value)
   _G.NoAimTeam = Value
 end)
-Q = Tabs.Combat:AddToggle("Q", {Title = "Accept Allies", Description = "turn on for auto accept ally", Default = false})
+Q = Tabs.Combat:AddToggle("Q", {Title = "Accept Allies", Description = "Turn on for auto accept ally", Default = false})
 Q:OnChanged(function(Value)
   _G.AcceptAlly = Value
 end)
