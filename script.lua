@@ -656,8 +656,8 @@ end
 
 local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeesHub-Script/UIMenu/refs/heads/main/UIFluent.lua"))()
 local Window = Fluent:CreateWindow({
-    Title="ZeesVN FluX [Premium]",
-    SubTitle="  by ZeesVN Hub", 
+    Title="DukeeHub FluX [Premium]",
+    SubTitle="  by Dukee Hub [ https://discord.gg/WYMXvrnpz2 ]", 
     TabWidth=160, 
     Theme="TuanAnhIOS",
     Acrylic=false,
