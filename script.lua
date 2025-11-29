@@ -774,7 +774,7 @@ Tabs.Main:AddButton({
             setclipboard(tostring("https://discord.gg/WYMXvrnpz2")) 
         end
 })
-Tabs.Main:AddSection("ZeesVN FluX")
+Tabs.Main:AddSection("DukeeHub FluX")
 local FarmLevel = Tabs.Main:AddToggle("FarmLevel", {Title = "Auto Farm Level", Description = "Farm Level NEW", Default = false})
 FarmLevel:OnChanged(function(Value)
   _G.Level = Value
